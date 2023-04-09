@@ -1,0 +1,114 @@
+.home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home__create {
+    margin: 80px auto;
+    width: 75%;
+    text-align: center;
+}
+
+.home__create h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    text-align: center;
+    margin: 25px;
+}
+
+.home__create button {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    height: 72px;
+    padding: 0 30px;
+    background: linear-gradient(180deg, #6E4FFF 0%, #4D37CD 100%);
+    box-shadow: inset -1.2225e-16px -1.99649px 1.99649px #4834C1, inset 1.2225e-16px 1.99649px 1.99649px #7353FF;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.home__pointe {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.home__pointe div {
+    text-align: center;
+
+}
+
+.home__pointe__img {
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.35) 100%);
+    box-shadow: 0px 24px 40px rgba(72, 52, 193, 0.25);
+    backdrop-filter: blur(21px);
+    border-radius: 24px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+.home__pointe__item p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 95px;
+}
+
+.home__pointe__img img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+@media screen and (max-width:768px) {
+    .home__create h1 {
+        font-size: 32px;
+        line-height: 33px;
+        margin-top: 0px;
+    }
+
+    .home__pointe {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    .home__create {
+        margin: 0px auto 50px auto;
+        width: auto;
+    }
+
+    .home__pointe div {
+        text-align: center;
+
+    }
+
+    .home__pointe__img {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 15px auto;
+        border-radius: 15px;
+    }
+
+    .home__pointe__item p {
+        width: 80%;
+        margin: 0 auto 20px;
+        font-size: 16px;
+    }
+
+    .home__pointe__img img {
+        width: 50%;
+        top: 25%;
+        left: 25%;
+    }
+}

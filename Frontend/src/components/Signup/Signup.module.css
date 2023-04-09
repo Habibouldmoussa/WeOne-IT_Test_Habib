@@ -1,0 +1,101 @@
+.signup {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.signup h2 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.signup p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.signup span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.signup label {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+}
+
+.signup__showPassword {
+    display: none;
+}
+
+.signup__input__label {
+    font-size: 8px;
+}
+
+.signup__input:focus-within {
+    border: 4px solid #7353FF;
+}
+
+.signup__input {
+    align-items: center;
+    border: 2px solid #E9E6F4;
+    border-radius: 10px;
+    height: 60px;
+    padding: 2px 10px;
+    margin: 8px 0px
+}
+
+.signup__input input {
+    height: 30px;
+    background: none;
+    float: left;
+}
+
+.signup input:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.signup__input__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.signup__feature {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.signup__feature label,
+.signup__feature span {
+    font-size: 8px;
+}
+
+.signup button {
+    height: 56px;
+    padding: 0 50px;
+    color: #6E4FFF;
+    background: #FFFFFF;
+    box-shadow: inset -1.2225e-16px -1.99649px 1.99649px #4834C1,
+        inset 1.2225e-16px 1.99649px 1.99649px #7353FF;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.login__signup {
+    text-align: center;
+    font-size: 14px;
+}

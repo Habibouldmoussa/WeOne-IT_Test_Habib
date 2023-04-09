@@ -1,0 +1,18 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: none;
+    width: 90%;
+
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        background: none;
+        padding: 0px;
+    }
+
+
+}

@@ -1,0 +1,232 @@
+.header {}
+
+.header__nav {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header__menu__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 13px;
+    width: 123px;
+    height: 56px;
+    text-align: center;
+}
+
+.header__menu__item__active {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(112.69deg, rgba(205, 132, 241, 0.1) 8.75%, rgba(205, 132, 241, 0) 98.16%);
+    border-radius: 13px;
+    width: 123px;
+    height: 56px;
+    text-align: center;
+}
+
+.header__nav__logo {}
+
+.header__menu {
+    width: 35%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__session {
+    color: white;
+}
+
+.header__session__signup {
+    height: 56px;
+    padding: 0 18px;
+    color: white;
+
+    background: #FFFFFF;
+    border: 3px solid #4834C1;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.header__session__signup img {
+    height: 20px;
+
+}
+
+.header__session__signin {
+    height: 56px;
+    padding: 0 50px;
+    color: white;
+    background: linear-gradient(180deg, #6E4FFF 0%, #4D37CD 100%);
+    box-shadow: inset -1.2225e-16px -1.99649px 1.99649px #4834C1,
+        inset 1.2225e-16px 1.99649px 1.99649px #7353FF;
+    border-radius: 16px;
+    border: none;
+    margin-left: 24px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header__session__profil {
+    height: 56px;
+    padding: 0 18px;
+    background: #FFFFFF;
+    border: 3px solid #4834C1;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.header__nav .checkbox {
+    display: none;
+}
+
+.header__nav .hamburgerlines {
+    display: none;
+}
+
+.header__nav .menu_items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup__wrapper {
+    z-index: 100000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.popup {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 40px rgba(72, 52, 193, 0.15);
+    border-radius: 24px;
+    width: 25%;
+    top: 10%;
+    left: 35%;
+    padding: 50px;
+}
+
+.popup input {
+    border: none;
+    font-size: 14px;
+}
+
+.popup__close {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .header__nav {
+        position: relative;
+        justify-content: center;
+
+    }
+
+    .header__menu__item__active {
+        text-decoration: underline;
+    }
+
+    .header__nav__logo {}
+
+    .header__nav .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 8px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    .header__menu {}
+
+
+    .header__nav .hamburgerlines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        font-size: 23px;
+        justify-content: space-between;
+        z-index: 9000;
+    }
+
+    .header__nav .menu_items {
+        position: fixed;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        height: 100vh;
+        width: 70%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+
+        top: 0;
+        margin-left: -114px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        background: #FFFFFF;
+        text-align: left;
+        z-index: 1000;
+    }
+
+    .header__nav .menu_items ul {
+        padding-left: 0;
+    }
+
+    .header__nav input[type="checkbox"]:checked~div.menu_items {
+        transform: translateX(0);
+    }
+
+    .header__menu {
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        line-height: 50px;
+        align-items: flex-start;
+    }
+
+    .header__session {
+        width: 80%;
+    }
+
+    .header__session__signin {
+        width: 110px;
+        padding: 0 10px;
+    }
+
+    .popup {
+        left: 5%;
+        width: 80%;
+        padding: 5%;
+    }
+
+    .popup__close {
+        right: 5%;
+    }
+}

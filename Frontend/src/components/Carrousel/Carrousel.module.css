@@ -1,0 +1,123 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: #FFFFFF;
+    width: 90%;
+    padding: 10px 0 80px 0;
+}
+
+.carousel__description {
+    padding: 50px;
+}
+
+.carousel__description h3 {
+    font-family: 'Objectivity';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.carousel__description__palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.carousel__description__font h3 {
+    margin-bottom: 20px;
+
+}
+
+.carousel__description__font li {
+    line-height: 30px;
+    text-indent: -10px;
+}
+
+.carousel__description__font li::before {
+    content: "•";
+    color: #7353FF;
+    display: inline-block;
+    width: 0.5em;
+    margin-left: -1em
+}
+
+.carousel__description span {
+    font-family: 'Objectivity';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.carousel__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: 0px 24px 40px rgba(72, 52, 193, 0.15);
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.carousel__logo__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel__logo__button button {
+    background: #b0a4f3;
+    opacity: 1;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: 0;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.carousel__logo__admin button {
+    cursor: pointer;
+
+}
+
+.carousel__description__palette__item {
+    height: 64px;
+    width: 172px;
+    margin-bottom: 15%;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .carousel {
+        background: none;
+
+        flex-direction: column-reverse;
+    }
+
+    .carousel__description {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .carousel__description h3 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .carousel__description__palette {}
+
+    .carousel__logo {
+        background: #FFFFFF;
+        width: 90%;
+    }
+}

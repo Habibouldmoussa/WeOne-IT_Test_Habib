@@ -1,0 +1,38 @@
+.admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: #FFFFFF;
+    width: 90%;
+    padding: 80px;
+}
+
+.admin button {
+    background: linear-gradient(180deg, #6E4FFF 0%, #4D37CD 100%);
+    box-shadow: inset -1.2225e-16px -1.99649px 1.99649px #4834C1, inset 1.2225e-16px 1.99649px 1.99649px #7353FF;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 20px;
+    color: white;
+}
+
+
+@media screen and (max-width:768px) {
+    .admin {
+        flex-direction: column;
+        width: 85%;
+        padding: 5% 5%;
+        border-radius: 20px;
+    }
+
+    .admin__modif {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+
+    }
+}

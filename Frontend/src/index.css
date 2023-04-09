@@ -1,0 +1,40 @@
+@import-normalize;
+@import url('https://fonts.cdnfonts.com/css/objectivity');
+@import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css";
+
+
+* {
+  font-family: 'Objectivity', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background:
+    left 20% no-repeat url("./assets/cube-1.png"), 90% 50% / 10% no-repeat url("./assets/hexwa-2.png"),
+    70% 80% no-repeat url("./assets/Arrow-1.png"),
+    left no-repeat url("./assets/bg.png");
+  background-size: 20%, 10%, 10%, cover;
+}
+
+@media screen and (max-width:768px) {
+  #root {
+    background:
+      right 3% no-repeat url("./assets/cube-1.png"), 8% 50% / 10% no-repeat url("./assets/hexwa-2.png"),
+      85% 45% no-repeat url("./assets/Arrow-1.png"),
+      left no-repeat url("./assets/bg.png");
+    background-size: 25%, 15%, 25%, cover;
+  }
+
+}

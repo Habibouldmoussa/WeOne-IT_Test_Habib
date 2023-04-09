@@ -1,0 +1,17 @@
+.about {
+    margin:auto;
+    width: 90%;
+    margin-top: 0;
+}
+
+@media all and (max-width: 820px) {
+    .about section {
+        height: 223px;
+        border-radius: 10px;
+    }
+
+    .about section div {
+        height: 223px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.error {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #FF6060;
+    font-size: 36px;
+}
+
+.error__title {
+    font-size: 288px;
+
+}
+
+.error__link {
+    color: #FF6060;
+    margin-top: 135px;
+    display: block;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media all and (max-width: 820px) {
+    .error__title {
+        font-size: 96px;
+        margin-top: 40%;
+    }
+
+    .error {
+        font-size: 18px;
+    }
+
+    .error__link {
+
+        font-size: 14px;
+    }
+}

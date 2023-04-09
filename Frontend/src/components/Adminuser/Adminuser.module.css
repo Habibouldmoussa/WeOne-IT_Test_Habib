@@ -1,0 +1,12 @@
+.adminuser__adduser {
+
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    input {
+        width: 120px;
+
+    }
+
+}
