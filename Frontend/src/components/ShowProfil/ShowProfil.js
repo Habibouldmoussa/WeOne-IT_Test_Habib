@@ -15,7 +15,7 @@ function ShowProfil() {
     const userId = cookies['userId'];
     useEffect(() => {
         async function getUsers() {
-            const response = await axios.get("http://127.0.0.1:3000/users/" + userId, {
+            const response = await axios.get("https://izeelogo.onrender.com/users/" + userId, {
                 headers: {
                     'authorization': 'Bearer ' + token,
                     'x-general-key': key

@@ -12,7 +12,7 @@ function Logos() {
     const timestemps = Date.now().toString()
     const secretKey = cookies['userId'] && cookies['userId'].slice(0, 16);
     const key = secretKey && CryptoJS.AES.encrypt(timestemps, secretKey);
-    const { isLoading, data, error } = useFetch('http://127.0.0.1:3000/logos/', {
+    const { isLoading, data, error } = useFetch('https://izeelogo.onrender.com/logos/', {
         headers: {
             'authorization': 'Bearer ' + token,
             'x-general-key': key

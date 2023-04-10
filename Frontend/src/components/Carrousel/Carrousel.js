@@ -26,7 +26,7 @@ function Carousel({ data }) {
     const [style3, setStyle3] = useState();
     const [style4, setStyle4] = useState();
     const deleteLogo = (id) => {
-        axios.delete('http://127.0.0.1:3000/logos/' + id, {
+        axios.delete('https://izeelogo.onrender.com/logos/' + id, {
             headers: {
                 'authorization': 'Bearer ' + token,
                 'x-general-key': key

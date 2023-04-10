@@ -19,7 +19,7 @@ function AdminAdd({ modif }) {
     const handleUploadClick = async e => {
         e.preventDefault()
         try {
-            const response = await axios.post('http://127.0.0.1:3000/Logos', Logo, {
+            const response = await axios.post('https://izeelogo.onrender.com/Logos', Logo, {
                 headers: {
                     'authorization': 'Bearer ' + token,
                     'x-general-key': key

@@ -21,7 +21,7 @@ function Signup() {
         } else {
 
             try {
-                const response = await axios.post("http://127.0.0.1:3000/users/signup", {
+                const response = await axios.post("https://izeelogo.onrender.com/users/signup", {
                     email,
                     password
                 });

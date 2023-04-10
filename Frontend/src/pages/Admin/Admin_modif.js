@@ -21,7 +21,7 @@ function AdminModif() {
     const { id } = useParams()
 
     //Récuperation du Logo par son id
-    const { isLoadingItem, dataItem, errorItem } = useFinditem('http://127.0.0.1:3000/Logos/', id, {
+    const { isLoadingItem, dataItem, errorItem } = useFinditem('https://izeelogo.onrender.com/Logos/', id, {
         headers: {
             'Authorization': 'Bearer ' + token,
             'x-general-key': key
@@ -38,7 +38,7 @@ function AdminModif() {
 
     const handleUploadClick = (e) => {
         e.preventDefault()
-        axios.put('http://127.0.0.1:3000/Logos/' + id, Logo, {
+        axios.put('https://izeelogo.onrender.com/Logos/' + id, Logo, {
             headers: {
                 'Authorization': 'Bearer ' + token,
                 'x-general-key': key

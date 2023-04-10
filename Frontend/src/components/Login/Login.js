@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmitLogin = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post("http://127.0.0.1:3000/users/login", {
+            const response = await axios.post("https://izeelogo.onrender.com/users/login", {
                 email,
                 password
             });

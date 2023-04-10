@@ -19,7 +19,7 @@ function Adminuser() {
     const [user, setUser] = useState();
     const [password, setPassword] = useState("");
 
-    const { isLoading, data, error } = useFetch('http://127.0.0.1:3000/users/', {
+    const { isLoading, data, error } = useFetch('https://izeelogo.onrender.com/users/', {
         headers: {
             'authorization': 'Bearer ' + token,
             'x-general-key': key
@@ -29,7 +29,7 @@ function Adminuser() {
         return <span>Oups il y a eu un problème</span>
     }
     const deleteUser = (id) => {
-        axios.delete('http://127.0.0.1:3000/users/' + id, {
+        axios.delete('https://izeelogo.onrender.com/users/' + id, {
             headers: {
                 'authorization': 'Bearer ' + token,
                 'x-general-key': key
@@ -41,7 +41,7 @@ function Adminuser() {
     const handleCreateUser = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post('http://127.0.0.1:3000/users', user, {
+            const response = await axios.post('https://izeelogo.onrender.com/users', user, {
                 headers: {
                     'authorization': 'Bearer ' + token,
                     'x-general-key': key
