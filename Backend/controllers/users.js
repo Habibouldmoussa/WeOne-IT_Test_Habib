@@ -21,10 +21,19 @@ exports.createUser = (req, res, next) => {
     const user = new User({
         ...userObject
     });
-    // On sauvgarde le User dans la base de donnée 
-    user.save()
-        .then(() => { res.status(201).json({ message: 'Utilisateur enregistré !' }) })
-        .catch(error => { res.status(400).json({ error }) })
+    bcrypt.hash(req.body.password, 10)
+        .then(hash => {
+            const user = new User({
+                email: req.body.email,
+                isAdmin: req.body.isAdmin,
+                password: hash
+            });
+            // Sauvgarde de l'user dans la base de donnée 
+            user.save()
+                .then(() => res.status(201).json({ message: 'Utilisateur créé !' }))
+                .catch(error => res.status(400).json({ error }));
+        })
+        .catch(error => res.status(500).json({ error }));
 
 };
 /* Modification d'un Utilisateur 

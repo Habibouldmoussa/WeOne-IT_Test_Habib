@@ -81,7 +81,7 @@ function Adminuser() {
                     </tbody>
                 </table>
 
-                <table>
+                <table className={Styles.Adminuser__add}>
                     <tbody>
                         <tr>
                             <td>

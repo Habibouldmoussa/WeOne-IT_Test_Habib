@@ -72,7 +72,7 @@ const Login = () => {
                     </span>
                 </div>
             </div>
-            <p className={Styles.login__feature}><label><input type="checkbox" onClick={(event) => setMaxAge(" ")} />Remember me</label> <span>Forgot password ?</span></p>
+            <p className={Styles.login__feature}><input type="checkbox" onClick={(event) => setMaxAge(" ")} id="rememberMe" /><label htmlFor="rememberMe">Remember me</label> <span>Forgot password ?</span></p>
             <button type="submit" className="login__submit" > Log in </button >
             <p className={Styles.login__signup}>Don’t have an account ? Sign up</p>
             {error && (
